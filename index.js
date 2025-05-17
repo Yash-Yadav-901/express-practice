@@ -42,7 +42,7 @@ app.get('/superheros/:id', (req,res) =>{
 //updating data
 
 app.put('/superheros/:id', (req, res)=>{
-        const herp= dataList.find(h => h.id ===parseInt(req.params.id));
+        const hero= dataList.find(h => h.id ===parseInt(req.params.id));
 
         if(!hero) return res.status(404).send('404 not found');
 
